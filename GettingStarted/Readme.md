@@ -1,4 +1,4 @@
-The Watson Data Platform lab is conducted using the IBM cloud. It utilizes the suite of fully managed cloud data services; Cloudant NoSQL DB, dashDB for Analytics and Object Storage to persist data and Data Connect to ingest data. These services are available and deployed from Bluemix, IBM’s cloud platform. This lab also leverages Watson Analytics, IBM’s smart data discovery and visualization service on the cloud. Finally, this lab will also utilize the IBM Data Science Experience, an interactive, collaborative, cloud-based environment where data scientists can use multiple tools to activate their insights. 
+The Watson Data Platform lab is conducted using the IBM cloud. It utilizes the suite of fully managed cloud data services; Cloudant NoSQL DB, dashDB for Analytics and Object Storage to persist data and Data Connect to ingest data. These services are available and deployed from Bluemix, IBM’s cloud platform. This lab also leverages Watson Analytics, IBM’s smart data discovery and visualization service on the cloud. Finally, this lab will also utilize the IBM Data Science Experience, an interactive, collaborative, cloud-based environment where data scientists can use multiple tools to activate their insights.
 
 ## Workflow
 
@@ -33,7 +33,7 @@ You will need a Bluemix account. Follow the instructions in one of the sections 
 
 ## If you have a Bluemix account...
 
-### Log Into Bluemix 
+### Log Into Bluemix
 
 ### [Click Here to Login to Bluemix](https://console.ng.bluemix.net/)
 
@@ -75,7 +75,7 @@ You will need a Bluemix account. Follow the instructions in one of the sections 
 
 > **Note** - You may be asked to verify multiple images. Select the Skip or Next button as instructed until you get to a screen (as shown above) with a Verify button.
 
-2. **Select** the images you are instructed to select. For instance, Select all squares with street signs. 
+2. **Select** the images you are instructed to select. For instance, Select all squares with street signs.
 3. **Select** the "Verify" button.
 
 <img src="./media/Step2-image-07.png"/>
@@ -156,8 +156,8 @@ You will be brought to a web page confirming that you sucessfully signed up for 
 
 <img src="./media/Step3-image-08.png" />
 
-2. **Enter** "dashdb" (without quotes) in the catalog search area.  
-3. **Click on** the “dashDB for Analytics” service.  
+2. **Enter** "db2 warehouse" (without quotes) in the catalog search area.  
+3. **Click on** the “DB2 Warehouse on Cloud” service.  
 
 <img src="./media/Step3-image-09.png" />
 
@@ -196,7 +196,7 @@ You will be brought to a web page confirming that you sucessfully signed up for 
 <img src="./media/Step3-image-15.png" />
 
 4. **Enter** "WDP Apache Spark” (without quotes) for the Service name.
-5. **Enter** “WDP Apache Spark” (without quotes) for the Credential name. 
+5. **Enter** “WDP Apache Spark” (without quotes) for the Credential name.
 5. **Select** the "Create" button. The service will be created and the launch page is displayed.
 
 <img src="./media/Step3-image-16.png" />
@@ -205,17 +205,17 @@ You will be brought to a web page confirming that you sucessfully signed up for 
 
 <img src="./media/Step3-image-17.png" />
 
-2. **Enter** "cloud data store" (without quotes) in the catalog search area.  
+2. **Enter** "object storage" (without quotes) in the catalog search area.  
 3. **Click on** the “Object Storage” service.  
 
 <img src="./media/Step3-image-18.png" />
 
-4. **Enter** "WDP Object Storage” (without quotes) for the Service name.
 5. **Scroll down** the service page to the Pricing area.
 
 <img src="./media/Step3-image-19.png" />
 
-6. **Select** the "Free" service plan.
+6. **Select** the "Lite" service plan.
+7. **Enter** "WDP Object Storage” (without quotes) for the Service name.
 7. **Select** the "Create" button. You will receive a message that the service is being created and that it may take a few minutes. The message will disappear and you will be brought to the services dashboard of your Bluemix account.
 
 <img src="./media/Step3-image-20.png" />
@@ -239,13 +239,13 @@ You will be brought to a web page confirming that you sucessfully signed up for 
 
 > Notice that my application name is "WDP Rick Buglio" with a Host Name of "WDP-Lab-Rick-Buglio-Application". The Host Name of the application has to be unique in Bluemix. Using your first and last name should make it unique. If you get an error that the name is not unique add your middle initial, if you have one, or use your Bluemix account email address instead.
 
-5. **Select** the "Create" button. The application creation process will begin. 
+5. **Select** the "Create" button. The application creation process will begin.
 
 <img src="./media/Step4-image-04.png" />
 
 > You are brought to the application page and see that Bluemix has begun starting the application. You will see a starting status with a spinning wheel. Wait until you see that the application is a running status.
 
-6. **Click On** the "IBM Bluemix" menu, to the left of the "Cloud Foundry Apps" menu from the Bluemix toolbar after you see that the application is in a running state. This will take you back to your Bluemix dashaboard.
+6. **Click On** the "IBM Bluemix" menu, to the left of the "Cloud Foundry Apps" menu from the Bluemix toolbar after you see that the application is in a running state. This will take you back to your Bluemix dashboard.
 
 <img src="./media/Step4-image-05.png" />
 
@@ -265,10 +265,10 @@ You will need a Watson Analytics account. If you **don't** have an account:
 
 ## If you are logged into Bluemix in the same browser session...
 
-### You will see this registration page: 
+### You will see this registration page:
 
 <img src="./media/Step5-image-02.png"/>
-   
+
 1. **Enter** the password for the IBM account displayed. My account is redacted to protect my identity.
 2. **Select** the "Sign Up" button.
 
@@ -278,7 +278,7 @@ You will need a Watson Analytics account. If you **don't** have an account:
 
 <img src="./media/Step5-image-03.png"/>
 
-1. **Enter** an email address. 
+1. **Enter** an email address.
 
 > If the email address you enter does not exist as an IBM account, Watson Analytics will keep you on this page. If so, complete steps 2-4 below.
 
@@ -313,7 +313,7 @@ To activate your account, **Go to** your email inbox that you used to register y
 
 <img src="./media/Step5-image-08.png"/>
 
-> In a few seconds you will be brought into a Welcome page that plays a video introducing you to Watson Analytics with a status of "Setting up your account" at the bottom of the page. 
+> In a few seconds you will be brought into a Welcome page that plays a video introducing you to Watson Analytics with a status of "Setting up your account" at the bottom of the page.
 
 <img src="./media/Step5-image-09.png"/>
 
@@ -372,7 +372,7 @@ You will need a GitHub account. If you **don't** have an account:
 
 <img src="./media/Step6-image-07.png"/>
 
-> You will be brought to a web page notifying you that your email was verified. 
+> You will be brought to a web page notifying you that your email was verified.
 
 12. **Select** the "X" in the top right corner to close the verification message.
 

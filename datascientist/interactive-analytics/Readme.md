@@ -1,4 +1,4 @@
-Data Scientist 
+Data Scientist
 Excercise 1 - Root Cause Analysis..
 [<img src="https://github.com/WatsonDataPlatform/E2ELab/raw/master/datascientist/media/DSE2E1.png">](https://github.com/WatsonDataPlatform/E2ELab/raw/master/datascientist/interactive-analytics/)
 
@@ -16,7 +16,7 @@ Step 1. Create a project and a connection to DashDB
 
 2.	Create a new project
 
-        You may have to come back to creating this project if you need to 
+        You may have to come back to creating this project if you need to
         create a Spark service and an ObjectStore repository.
 
   a.	Click on the "+" sign in the upper right of the screen and select "Create project”
@@ -28,7 +28,7 @@ Step 1. Create a project and a connection to DashDB
 	- Give the service named "IA_Lab_Spark" and click on "Create Instance".
 	- Click on the "CXD" logo in the upper left of your screen to go back
 	  to creating a new project
-           
+
   c.	If, under "Storage Type" you see: "No object storage instances found",
 	click on: "Create a new instance"
 	- Select the free plan and click on "Buy IBM Object Storage",
@@ -44,20 +44,20 @@ Step 1. Create a project and a connection to DashDB
 
 1. Click on "add notebooks"
 
-<img src="https://github.com/WatsonDataPlatform/E2ELab/raw/master/datascientist/interactive-analytics/media/createnew.png" width="750"> 
- 
+<img src="https://github.com/WatsonDataPlatform/E2ELab/raw/master/datascientist/interactive-analytics/media/createnew.png" width="750">
+
 2. Type ‘IA_Lab_Notebook’ as Notebook name, click on ‘from URL’ link and specify:  https://raw.githubusercontent.com/WatsonDataPlatform/E2ELab/master/datascientist/interactive-analytics/DSX_IA_Lab.ipynb
 
  ![start notebook](https://github.com/WatsonDataPlatform/E2ELab/raw/master/datascientist/interactive-analytics/media/createNotebook.png)
 
   a.	 Click on ‘Create Notebook’
-  
+
 1. Once the notebook is created, add dashDB as a data asset for the project
 
   a.	Click on the '1001' icon (upper right corner), then Connections -> project page
 
 	Note that it opens a new tab that you'll close when done.
-  
+
 
   b.	Select the "connections" -> "create connection", then key in ‘dashDB’ as connection name
 
@@ -77,12 +77,14 @@ Step 1. Create a project and a connection to DashDB
 
   a.	Place the cursor in the first cell. This should be empty, if not clear the contents.
 
-  b.	Click on ‘Insert Code’  to insert credentials for the data source ‘dashDB’
+  b.	Click on ‘Insert Code’  to insert credentials for the data source ‘dashDB’ (TBD: needs to be changed to DB2 Warehouse)
 
+  > <img src="./media/addSource.png" />
     ![insert to code](https://github.com/WatsonDataPlatform/E2ELab/raw/master/datascientist/interactive-analytics/media/addSource.png)
 
   c.	Rename the inserted array variable ‘credentials_1’  to ‘credentials’
 
+ > <img src="./media/credentials.png" />
     ![credentials](https://github.com/WatsonDataPlatform/E2ELab/raw/master/datascientist/interactive-analytics/media/credentials.gif)
 
   d.	To execute code in any notebook cell, place cursor in cell and click the arrow icon in toolbar
@@ -105,7 +107,7 @@ Step 1. Create a project and a connection to DashDB
 7.	You can move the mouse over the visual to see data points on each bar. The chart shows a steady decline in sales for ‘Outdoor Protection’ product line.
 8.	Pixiedust is an open source visualization package developed by IBM labs. You can visualize SparkSQL data frames with a single API call and interactively access raw data, pick visual options and stow data away to files or IBM Cloudant or Object Storage.
 
---- 
+---
 #### End of Lab
 
 ##### [Next Steps: Build your next Spark Analytics project using IBM Data Science Experience.](https://github.com/WatsonDataPlatform/E2ELab/raw/master/datascientist/machinelearning)

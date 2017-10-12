@@ -2,25 +2,25 @@
 > <img src="./media/DataDiscovery.png" />
 
 Perform these hands-on exercises using guided data exploration capabilities found in IBM Watson Analytics on customer transaction data to uncover unique insights about product affinities.
- 
+
 
 # Hands on Exercises...
 
 
-1.  Logon to Watson Analytics by going to page “watsonanalytics.com” on a browser and clicking on the “SIGN IN” text on the top right. 
+1.  Logon to Watson Analytics by going to page “watsonanalytics.com” on a browser and clicking on the “SIGN IN” text on the top right.
 
  > <img src="./media/WatsonASignon.png" />
 
-2.  If you completed the [Data Engineer Lab](https://github.com/WatsonDataPlatform/E2ELab/tree/master/dataengineer/) you should have the "Great Outdoor Customer Orders.csv" file in your "Personal" folder as shown in the image below step 8. If this file does not exist or you do not wish to complete the Data Engineer lab, proceed to Step 3 to upload the file. If this file does exist, proceed to Step 9. 
+2.  If you completed the [Data Engineer Lab](https://github.com/WatsonDataPlatform/E2ELab/tree/master/dataengineer/) you should have the "Great Outdoor Customer Orders.csv" file in your "Personal" folder as shown in the image below step 8. If this file does not exist or you do not wish to complete the Data Engineer lab, proceed to Step 3 to upload the file. If this file does exist, proceed to Step 9.
 
-3. Download this file <https://github.com/WatsonDataPlatform/E2ELab/blob/master/GettingStarted/Great%20Outdoor%20Customer%20Orders.csv> to a local directory. When you choose download, the file will open in a browser window. Use the "File" > "Save Page As..." and ensure you maintain the .csv file extention.
+3. Download this file <https://github.com/WatsonDataPlatform/E2ELab/blob/master/businessanalyst/Great%20Outdoor%20Customer%20Orders.csv> to a local directory. When you choose download, the file will open in a browser window. Use the "File" > "Save Page As..." and ensure you maintain the .csv file extention.
 
-4. From Watson Analytics, click on “+ New data” button towards the top left. 
+4. From Watson Analytics, click on “+ New data” button towards the top left.
 
  > <img src="./media/image9.png" />
 
 5.  You should now be able to import the spreadsheet “Great Outdoor Customer Orders.csv” that that you downloaded in Step 3. Click on “Local file” to import the dataset into Watson Analytics.
-    
+
  > <img src="./media/image10.png" />
 
 6.  You can now either drag and drop the spreadsheet or click on “Browse” to select the file from the folder where you downloaded the dataset from Github.
@@ -35,7 +35,7 @@ Perform these hands-on exercises using guided data exploration capabilities foun
 
   > <img src="./media/WatsonAcsv.png" />
 
-9.  You are now ready to let Watson Analytics discover insights and trends from your data. Click on the dataset and you’ll be taken to a screen labelled as “New Discovery Set” as shown below. As starting points, 6 different visualizations are automatically recommended for you to explore (you can click on “Show Next” on the top right to see the next set of guided visualizations), and you can create your own visualizations by selecting from the 20 different chart types in the bottom of the screen. You also have the option to type in a question using natural language at the top and Watson Analytics will suggest an appropriate visualization that likely answers that question. 
+9.  You are now ready to let Watson Analytics discover insights and trends from your data. Click on the dataset and you’ll be taken to a screen labelled as “New Discovery Set” as shown below. As starting points, 6 different visualizations are automatically recommended for you to explore (you can click on “Show Next” on the top right to see the next set of guided visualizations), and you can create your own visualizations by selecting from the 20 different chart types in the bottom of the screen. You also have the option to type in a question using natural language at the top and Watson Analytics will suggest an appropriate visualization that likely answers that question.
  > <img src="./media/image14.png" />
 
 10.  Let’s scroll back to the top and type in a question “Show the breakdown of Transactions by Product Line and Product Type” and hit enter. You will automatically be provided with a set of starting points beginning with the most relevant visualization that helps answer your question. Let’s click on the treemap on the top left (the first visualization listed as “Most relevant” under “Starting points”).
@@ -74,7 +74,7 @@ Perform these hands-on exercises using guided data exploration capabilities foun
 
  > <img src="./media/image23.png" />
 
-19. At the bottom of the screen, click on "Bars" and choose "Age". Click on "Length" and choose "Transactions". Click on "Color" and choose "Product Line". 
+19. At the bottom of the screen, click on "Bars" and choose "Age". Click on "Length" and choose "Transactions". Click on "Color" and choose "Product Line".
 
  > <img src="./media/image24.png" />
 
@@ -103,7 +103,7 @@ Perform these hands-on exercises using guided data exploration capabilities foun
 
 26. We will create one last visualization that will show us the attributes that drive “Product Line”. Click on the “+” and type a question “What drives Product Line” on the top left as shown below and hit enter.
     Watson Analytics returns with 6 resulting insights for you to choose from. Click on the most relevant (top left) Spiral Visualization as shown below.
-    
+
  > <img src="./media/image32.png" />
 
 27. You will see a list of factors arranged in order of their predictive strengths. You should see the top predictor as “Product Type” with 100% strength (since each Product Line has a set of unique Product Types) right at the center of the bulls-eye and then the next relevant attributes are “Profession and Gender” and “Professional and Age” respectively, each with 50% predictive strength. Click on the “Untitled 1” tab label for this discovery and click on the rename “pencil” icon and type in the label “Drivers of Product Line”. You should now see the discovery as below:

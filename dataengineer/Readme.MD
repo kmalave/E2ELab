@@ -2,7 +2,7 @@
 
 [<img src="https://github.com/WatsonDataPlatform/E2ELab/blob/master/Media/DataPreparation.png">](https://github.com/WatsonDataPlatform/E2ELab)
 
-As a Data Engineer, you are challenged with the constant and expediated task of delivering quality, trusted data to business analytsts, data scientists and application developers. Time is always of the essence, so you need the ablity to quickly and easily find, access, prepare, cleanse and standardize data and deliver it to those who need it when they need it in support of business analytical and application use cases. 
+As a Data Engineer, you are challenged with the constant and expediated task of delivering quality, trusted data to business analytsts, data scientists and application developers. Time is always of the essence, so you need the ablity to quickly and easily find, access, prepare, cleanse and standardize data and deliver it to those who need it when they need it in support of business analytical and application use cases.
 
 The IBM Bluemix Data Connect service, an intergral component of the Watson Data Platform, helps tackle these challenges.
 
@@ -12,7 +12,7 @@ Data Connect is managed by IBM in the cloud, so you can sleep better at night, w
 
 With Data Connect, Data Engineers can enable self-service data access to end users using elastic deployment through the cloud and delver the data faster while maintaining important controls such as data governance and security. This allows them to break free from routine data requests and focus on additional value for an organization such as implementing and enforcing corporate standards, security, data governance and complex requirements. Data Connect saves time and resources by reducing the effort to provision trusted data and make it fit for use.
 
-This lab will demonstrate how a data engineer can easily utilize these capabilities of the Data Connect service: 
+This lab will demonstrate how a data engineer can easily utilize these capabilities of the Data Connect service:
 
 * Creating and working with Data Connect connectors
 *	Visualizing and understanding data quality and Content
@@ -71,7 +71,7 @@ Step | Description
 <img src="./media/Step1-image-07.png"/>
 
 > The Data Connect user interface provides easy access to all functions from a main menu located on the left side and a few primary functions that are displayed in the middle of the home page that allow you to navigate to the different areas of the interface.
-> 
+>
 > **Notice** that there is a menu control button to the right of the Data Connect service name. It controls the appearance of the menu on the left side. By selecting this button you can hide or view the left side menu. Also, clicking on the service name you can always get back to the home page. Let’s experiment with these controls.
 
 1. **Select** the menu control button. The menu will disappear. Select it again and the menu will reappear.  
@@ -83,20 +83,20 @@ Step | Description
 <img src="./media/Step2-image-01.png"/>
 
 1. **Select** the “Connections” link at the bottom of the home page.  
- 
+
 <img src="./media/Step2-image-02.png"/>
 
 2. **Select** the “IBM Watson Analytics” connector from the list of connectors.
 
 <img src="./media/Step2-image-03.png"/>
 
-> **Note** - Data Connect does not require you to enter a Watson Analytics user ID or password when creating a connection to Watson Analytics. It communicates with Watson Analytics using the cloud OAuth2 API and uses your Bluemix credentials to authenticate. Therefore, the connection creation may fail if you do not have a Watson Analytics account with credentials (user and password) that matches the Bluemix account you used to launch Data Connect. 
+> **Note** - Data Connect does not require you to enter a Watson Analytics user ID or password when creating a connection to Watson Analytics. It communicates with Watson Analytics using the cloud OAuth2 API and uses your Bluemix credentials to authenticate. Therefore, the connection creation may fail if you do not have a Watson Analytics account with credentials (user and password) that matches the Bluemix account you used to launch Data Connect.
 >
 >Also, during authentication, a new browser session will appear when Data Connect communicates with Watson Analytics to validate your credentials.
 
 3. **Enter** "Watson Analytics" (without quotes) for the Connection name.  
 4. **Enter** "My Watson Analytic Account" (without quotes) for the Description.
-5. **Select** the "CA1-Toronto" Data Center. 
+5. **Select** the "CA1-Toronto" Data Center.
 6. **Select** the "Create Connection" button.
 
 <img src="./media/Step2-image-04.png"/>
@@ -106,7 +106,7 @@ Step | Description
 <img src="./media/Step2-image-05.png"/>
 
 > Otherwise, you will receive the error screen above. There can be several reasons for this:
-> 
+>
 > 1. You **don't** have a Watson Analytics account with credentials that match your Bluemix account. If so, close the browser window that contains the error and go back to the [GettingStarted](https://github.com/WatsonDataPlatform/E2ELab/tree/master/GettingStarted/) section and follow the instructions to create a Watson Analytics account using your Bluemix credentials.
 >
 > 2. Your Watson Analytics account is not hosted in the **CA1-Toronto** data center I instructed you to select. Close the browser window that contains the error. Go back to the Data Conect service interface and try the **US1-Dallas** or **EU1-Amsterdam** data center and select the "Create Connection" button until it succeeds.
@@ -140,7 +140,7 @@ Step | Description
 <img src="./media/Step4-image-03.png" />  
 
 3. **Click into** the name area and **Enter** a name of "Data Engineer Lab" (without quotes).  
-4. **Select** the small check mark button next to the Activity name you just entered to save the new name.  
+4. **Select** the Save button next to the Activity name you just entered to save the new name.  
 
 <img src="./media/Step4-image-04.png" />  
 
@@ -158,7 +158,7 @@ Step | Description
 
 <img src="./media/Step4-image-06.png" />
 
-> The object menu on the right simplifies the navigation process and provides easy access to Operations, Metrics, Details and History at the table, file and column level. The Detail section provides detailed quality and data content information for a table, file or column and a quality score for every table, file and column. The Operations section allows you to select and apply transformation functions at the table, file and column level. The Metrics section provides distribution frequency data at the column level. The History section is provided for you to review all actions you perform at the table, file and column level. 
+> The object menu on the right simplifies the navigation process and provides easy access to Operations, Metrics, Details and History at the table, file and column level. The Detail section provides detailed quality and data content information for a table, file or column and a quality score for every table, file and column. The Operations section allows you to select and apply transformation functions at the table, file and column level. The Metrics section provides distribution frequency data at the column level. The History section is provided for you to review all actions you perform at the table, file and column level.
 
 1.	**Select** the Details section for the Great Outdoor Customer Orders.csv file to review its quality and content.
 2.	**Select** the down arrow next to the folder icon of the Details section to open up all of the sub-sections.
@@ -198,7 +198,7 @@ Step | Description
 1.	**Hover over** the name area of the PRODUCT_LINE column and Select the edit button that looks like a pencil to edit the name. Remove all the underscores from the column name and rename the column to PRODUCT LINE replacing all underscores with spaces.
 2. **Hover over** the name area of the PRODUCT_TYPE column and Select the edit button that looks like a pencil to edit the name. Remove all the underscores from the column name and rename the column to PRODUCT TYPE replacing all underscores with spaces.
 3. **Hover over** the name area of the CUST_ORDER_NUMBER column and Select the edit button that looks like a pencil to edit the name. Remove all the underscores from the column name and rename the column to CUSTOMER ORDER NUMBER changing CUST to CUSTOMER and replacing all underscores with spaces.
-4. **Hover over** the name area of the MARITAL_STATUS column and Select the edit button that looks like a pencel to edit the name. Remove all the underscoreS from the column name and rename the column to MARITAL STATUS replacing all underscores with spaces.
+4. **Hover over** the name area of the MARITAL_STATUS column and Select the edit button that looks like a pencil to edit the name. Remove all the underscoreS from the column name and rename the column to MARITAL STATUS replacing all underscores with spaces.
 
 <img src="./media/Step4-image-13.png" />
 
@@ -245,7 +245,7 @@ Step | Description
 <img src="./media/Step4-image-19.png" />
 
 > You can review the history of your shaping actions at any time by invoking the History view. You can also undo and restore actions from the History view.
- 
+
 1. **Select** the "Great Outdoor Customer Orders.csv" file to bring it into context.
 2.	**Select** the "History" button from the right side panel to view the history of your activity operations.
 3. **Scroll** down to the bottom of the list of actions.

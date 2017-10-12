@@ -18,7 +18,7 @@ As an Application Developer, you need multiple application and data services tha
 Step | Description
 ------------ | -------------
 1 | Launch the Cloudant NoSQL DB Service
-2 | Create and Setup a Cludant NoSQL Database
+2 | Create and Setup a Cloudant NoSQL Database
 3 | Build and Deploy the Watson Data Platform Application
 
 ## Step 1: Launch the Cloudant NoSQL DB Service
@@ -72,19 +72,19 @@ Step | Description
 
 4. **Replace** the text with the following text:
 
- > {
- >
- > "index": {
- >
- > "fields": \[{"evictTS" : "asc"}, "storeID", "zoneID"\]
- >
- > },
- >
- > "name" : "evictTS-index",
- >
- > "type" : "json"
- >
- > }
+>{
+  "index": {
+    "fields": [
+      {
+        "evictTS": "asc"
+      },
+      "storeID",
+      "zoneID"
+    ]
+  },
+  "name": "evictTS-index",
+  "type": "json"
+}
 
 5. **Select** the "Create Index” button.
 
@@ -96,15 +96,11 @@ Step | Description
 
 7. **Replace** the text with the following text:
 
- > {
- >
- > "type": "text",
- >
- > "name": "text-index",
- >
- > "index": {}
- >
- > }
+>{
+  "type": "text",
+  "name": "text-index",
+  "index": {}
+}
 
 8. **Select** the "Create Index” button.
 
@@ -126,9 +122,7 @@ Step | Description
 
 <img src="./media/Step3-image-02.png" />
 
-2. **Select** the "Apps" menu item.
-
-<img src="./media/Step3-image-03.png" />
+2. The Bluemix navigation menu allows you to view infrastructure (Containers, infrastructure, or VMWare) and applications and services (Application Services, Blockchain, ...).
 
 3. **Select** the "Dashboard" sub-menu to go to the "All Apps" section of your Bluemix dashboard.
 
@@ -166,15 +160,15 @@ Step | Description
 
 <img src="./media/Step3-image-10.png" />
 
-> A new tab will open in your browser and you will be brought into IBM Bluemix DevOps to create a toolchain. This toolchain includes tools to develop and deploy your app. Depending on your app, when you create the toolchain, the GitHub repository will either be empty or will contain source code from your app. 
+> A new tab will open in your browser and you will be brought into IBM Bluemix DevOps to create a toolchain. This toolchain includes tools to develop and deploy your app. Depending on your app, when you create the toolchain, the GitHub repository will either be empty or will contain source code from your app.
 
 > This toolchain uses tools that are part of the Continuous Delivery service. If an instance of that service isn't already in your organization, when you click Create, it is automatically added at no cost to you.
 
 <img src="./media/Step3-image-11.png" />
 
 1. **Scroll down** the page until you see the Tool Integrations section.
-2. **Click on** the GitHub integration link.
-3. **Select** the "Authorize" button. This will take you into a login page to log into or create a GitHub account. 
+2. **Click on** the Git Repos and Issue Tracking integration link.
+3. **Select** the "Authorize" button. This will take you into a login page to log into or create a GitHub account.
 
 <img src="./media/Step3-image-12.png" />
 
@@ -203,27 +197,14 @@ If you are New to GitHub and **do not** have a GitHub account:
 
 <img src="./media/Step3-image-16.png" />
 
-4. **Select** the "Create" button at the botton of the page to create the toolchain.
+4. **Select** the "Create" button at the bottom of the page to create the toolchain.
 
 <img src="./media/Step3-image-17.png" />
 
-5. **Select** the "Create" button at the botton of the page to create the toolchain.
+5. **Select** the "Create" button at the bottom of the page to create the toolchain.
 
-<img src="./media/Step3-image-19.png" />
-
-6. **Select** the "Create" button at the botton of the page to create the toolchain.
-
-
- > *Populate the repo with the starter app package and enable the Build & Deploy pipeline?*
-
-	g.  **Tick the box** and click **Continue**
-
-	h.  Once the Git repo is created you will be notified. Click **Close**
-
-	i.  In the Continuous Deliver panel select **Configure**
-
-	j.  You should see two stages which have been created for you. One for Build and the other for Deploy.
-
+	j.  You should see four DevOps tools which have been created for you. Now, **Select** Delivery pipeline
+	k.  You will see that two delivery pipeline stages have been created for you. One for Build and the other for Deploy.
 
 8.  DevOps Service for Bluemix
 
@@ -237,7 +218,9 @@ If you are New to GitHub and **do not** have a GitHub account:
 
 9.  Return to your Git repo
 
-    a.  Select “**Edit Code**” on the top navigation bar
+    a.  Go up one level to get back to four DevOps tools.
+
+		b. Select “**Eclipse Orion**” on the top navigation bar
 
     b.  In the left-hand pane click on the top entry with the twisty icon. We are going to import code and it is important that we import it to the root of the folder.
 
@@ -255,7 +238,7 @@ If you are New to GitHub and **do not** have a GitHub account:
 
 10.  In the left-hand navigation bar click the **Git** icon <img src="./media/image9.png" width="29" height="32" /> just below “**edit code**”
 
-    a.  Allow the page to completely refresh all the code changes. You should see 11 files selected in the right-hand pane.
+    a.  Allow the page to completely refresh all the code changes. You should see 12 files selected in the right-hand pane.  One change should be the changes you made to the **Manifest.yml** file.
 
     b.  Enter a comment into the comment window and click **Commit**.
 
@@ -263,7 +246,7 @@ If you are New to GitHub and **do not** have a GitHub account:
 
 11.  DevOps Service for Bluemix
 
-    a.  Select **Build and Deploy** on the top navigation bar
+    a.  Go back up one level and select and select **Delivery pipeline** tools box.
 
     b.  Click the play button on the **Build stage** to build the newly delivered code. If the build is successful the Deploy stage should start automatically and deploy your code to the server.
 
